@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
-import beerIcon from "../assets/beer.png";
+import beerIcon from "../assets/Images/beer.png";
 
 export default function SplashScreen() {
     return (

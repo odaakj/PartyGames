@@ -1,11 +1,16 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import GameButton from '../Components/GameButton';
 
 
 export default function HomeScreen() {
     return (
         <View style={styles.container}>
-            <Text>Home Screen</Text>
+            <View style={styles.buttonContainer}>
+                <GameButton label="Snusboksen" onPress={() => alert('Start Game pressed')} />
+                <GameButton label="Jeg har aldri..." onPress={() => alert('Pause Game pressed')} />
+                <GameButton label="Karaoke" onPress={() => alert('Reset Game pressed')} />
+            </View>
         </View>
     );
 }
@@ -15,6 +20,11 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#a9c6e3'
+        backgroundColor: '#89CFF0'
     },
+    buttonContainer: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 300, 
+    }
 });
