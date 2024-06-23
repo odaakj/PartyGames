@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyleSheet, Pressable, View, Text } from "react-native";
+import { useRouter } from 'expo-router';
 
 
-export default function GameButton({ label }) {
+export default function GameButton({ route, label }) {
+    const router = useRouter();
+
+    useEffect(() => {
+        console.log(`GameButton for ${label} loaded`);
+      }, []);
+
     return (
         <View style={styles.buttonContainer}>
-            <Pressable style={styles.button} onPress={() => alert('You have pushed the button')}>
+            <Pressable style={styles.button} onPress={() => router.push(route)}>
                 <Text style={styles.buttonLabel}>{label}</Text>
             </Pressable>
         </View>

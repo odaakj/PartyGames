@@ -1,25 +1,28 @@
 {
   "expo": {
+    "entryPoint": "./App.js",
     "assetBundlePatterns": [
-      "assets/Fonts/BebasNeue-Regular.ttf"
+      "assets/**/*"
     ],
     "name": "PartyGames",
     "slug": "PartyGames",
+    "scheme": "PartyGames",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Images/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Images/beer.png",
+      "bundler": "metro"
     },
     "plugins": [
       "expo-font",
