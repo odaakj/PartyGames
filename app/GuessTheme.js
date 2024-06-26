@@ -1,11 +1,10 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
-
-export default function HomeScreen() {
+export default function SplashScreen() {
     return (
         <View style={styles.container}>
-            <Text>Home Screen</Text>
+                <Text style={styles.text}>Gjett temaet</Text>
         </View>
     );
 }
@@ -16,5 +15,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#a9c6e3'
+    },
+    text: {
+        marginTop: 20,
+        fontSize: 60,
+        fontWeight: 'bold',
+        
     },
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
-import beerIcon from "../assets/beer.png";
+import beerIcon from "../assets/Images/beer.png";
 
 export default function SplashScreen() {
     return (
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#a9c6e3'
+        backgroundColor: '#89CFF0'
     },
     innerContainer: {
         justifyContent: 'center',
@@ -31,8 +31,7 @@ const styles = StyleSheet.create({
     },
     text: {
         marginTop: 20,
-        fontSize: 60,
-        fontWeight: 'bold',
-        
+        fontSize: 100,
+        fontFamily: 'BebasNeue',
     },
 });
