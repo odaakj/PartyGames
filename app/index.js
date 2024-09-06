@@ -14,8 +14,7 @@ export default function HomeScreen() {
             <Text style={styles.text}>Velg en drikkelek</Text>
             <View style={styles.buttonContainer}>
                 <GameButton label="Snusboksen" route="/Snusboksa" />
-                <GameButton label="Rygg Mot Rygg." route="/RyggMotRygg" />
-                <GameButton label="Gjett temaet" route="/GuessTheme" />
+                <Text>Flere drikkeleker kommer...</Text>
             </View>
         </View>
     );
@@ -34,9 +33,9 @@ const styles = StyleSheet.create({
         marginTop: 300, 
     },
     text: {
-        fontSize: 24,
+        fontSize: 42,
         fontFamily: 'BebasNeue',
         color: '#000',
-        marginBottom: 20, // Adjust margin as needed
+        margin: 10, // Adjust margin as needed
     }
 });
