@@ -1,24 +1,15 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Alert } from "react-native";
 
 
+export default function GameCard({ question, index }) {
 
-export default function GameCard({ question }) {
-
-    // Function to format the question by splitting at periods and joining with new lines
-    const formatQuestion = (question) => {
-        if (!question) {
-            return "";  // Return an empty string if question is undefined
-        }
-        return question.replace(/([.?!])\s*/g, '$1\n\n');   // Keep the original punctuation
-    };
-    
     return (
         <View styles={styles.Container}>
             <View style={styles.CardContainer}>
-                <Text style={styles.text}>{formatQuestion(question)}</Text>
-            </View>  
-        </View>  
+                <Text style={styles.text}>{question}</Text>
+            </View>
+        </View>
     );
 }
 
