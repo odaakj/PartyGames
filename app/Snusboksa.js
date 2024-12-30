@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import GameCard from '../Components/GameCard';
-import questions from '../Components/HundredQuestions'; 
+import questions from '../Components/HundredQuestions';
 import { useState } from 'react';
 import GeneralButton from '../Components/GeneralButton';
 import NavButton from '../Components/NavButtons';
@@ -15,10 +15,10 @@ export default function Snusboksa() {
     };
 
     const prevQuestion = () => {
-        setIndex((prevIndex) => (prevIndex - 1 + questions.length) % questions.length);   
+        setIndex((prevIndex) => (prevIndex - 1 + questions.length) % questions.length);
     };
 
-    
+
     return (
         <View style={styles.container}>
                 <Text style={styles.title}>SNUSBOKSA</Text>
@@ -28,15 +28,15 @@ export default function Snusboksa() {
                     {index > 0 && (
                         <GeneralButton label='Tilbake' onPress={prevQuestion} />
                     )}
-                    
+
                     {/* Conditionally render the "Next" button if not the last question */}
                     {index < questions.length - 1 && (
                         <GeneralButton label='Neste' onPress={nextQuestion} />
                     )}
-                </View>  
+                </View>
                 <View style={styles.navButtonContainer}>
                 {/* Back to Menu button, always visible, styled and positioned independently */}
-                <NavButton label='Tilbake til meny' route="/" /> 
+                <NavButton label='Tilbake til meny' route="/home" />
                 </View>
         </View>
     );
@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
     },
     title: {
         marginTop: 20,
-        fontSize: 50,
-        fontWeight: 'bold',  
+        fontSize: 60,
+        fontWeight: 'bold',
         fontFamily: 'BebasNeue',
     },
     helpButtonsContainer: {
