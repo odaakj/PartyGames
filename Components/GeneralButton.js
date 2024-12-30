@@ -18,7 +18,7 @@ export default function GeneralButton({ label, onPress, route }) {
             console.warn("No route or onPress provided for GeneralButton");
         }
     };
-    
+
     return (
         <View style={styles.buttonContainer}>
             <Pressable style={styles.button} onPress={handlePress}>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     },
     buttonLabel: {
         color: '#000000',
-        fontSize: 20,
+        fontSize: 25,
         fontFamily: 'BebasNeue',
         textAlign: 'center',
     },
