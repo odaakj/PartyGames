@@ -1,21 +1,43 @@
-import React, { useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import GameButton from '../Components/GameButton';
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
 
+export default function LoginScreen() {
+    const router = useRouter();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-export default function HomeScreen() {
-    
-    useEffect(() => {
-        console.log('Home Screen Loaded');
-      }, []);
-    
+    const handleLogin = () => {
+        // TODO: Replace with your Firebase Auth signIn logic:
+        // signInWithEmailAndPassword(auth, email, password)
+        //   .then(() => { router.push('/home'); })
+        //   .catch((error) => { ... });
+
+        // For now, just navigate to '/home':
+        router.push('/home');
+    };
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Velg en drikkelek</Text>
-            <View style={styles.buttonContainer}>
-                <GameButton label="Snusboksen" route="/Snusboksa" />
-                <Text>Flere drikkeleker kommer...</Text>
-            </View>
+        <Text style={styles.title}>Login</Text>
+
+        <TextInput
+            style={styles.input}
+            placeholder="Email"
+            value={email}
+            onChangeText={setEmail}
+            autoCapitalize="none"
+        />
+
+        <TextInput
+            style={styles.input}
+            placeholder="Password"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+        />
+
+        <Button title="Login" onPress={handleLogin} />
         </View>
     );
 }
@@ -23,19 +45,23 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        backgroundColor: '#89CFF0',
         alignItems: 'center',
-        backgroundColor: '#89CFF0'
-    },
-    buttonContainer: {
         justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 300, 
+        padding: 20,
     },
-    text: {
-        fontSize: 42,
+    title: {
+        fontSize: 32,
         fontFamily: 'BebasNeue',
-        color: '#000',
-        margin: 10, // Adjust margin as needed
-    }
+        marginBottom: 20,
+    },
+    input: {
+        width: '80%',
+        borderWidth: 1,
+        borderColor: '#000',
+        backgroundColor: '#fff',
+        padding: 10,
+        marginBottom: 10,
+        fontSize: 16,
+    },
 });
