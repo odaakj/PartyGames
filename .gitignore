@@ -104,3 +104,6 @@ temp/
 *.sublime-project
 *.sublime-workspace
 *.code-workspace
+
+# Dist
+dist/

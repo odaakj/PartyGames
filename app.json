@@ -6,7 +6,7 @@
     ],
     "name": "PartyGames",
     "slug": "PartyGames",
-    "scheme": "PartyGames",
+    "scheme": "partygames",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/Images/icon.png",
@@ -29,6 +29,20 @@
     "plugins": [
       "expo-font",
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "299fdfa1-bc05-4f86-972a-d1932d999f99"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/299fdfa1-bc05-4f86-972a-d1932d999f99"
+    }
   }
 }
