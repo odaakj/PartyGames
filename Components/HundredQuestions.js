@@ -11,7 +11,7 @@ const questions = [
     /** 9 */"Du danser kanskje, men rytme har du ikke. Hvem klarer ikke dra på byen uten å gnikke?",
     /** 10 */"Fy på deg, hold henda for deg selv. Kast boksen til den som oftest tar seg en prell.",
 
-    /** 11 */"Ikke rart økonomien di er ræva. Hvem i rommet logger mest på strava?",
+    /** 11 */"Ikke rart økonomien din er ræva. Hvem i rommet logger mest på strava?",
     /** 12 */"Greit du liker å skryte over dine løpevaner. Hvem i rommet står oftest i vinduet å spaner?",
     /** 13 */"Slutt å være en jævla creep. Kast boksen til den som alltid blir fornærmet, det er virkelig ikke så deep.",
     /** 14 */"Du tar kanskje alt til hjerte. Hvem i rommet liker smerte?",
@@ -43,7 +43,7 @@ const questions = [
     /** 38 */"Gratulerer, nå er det bare å holde det nede. Kast boksen til den som vil ha sex med noen tilstede.",
     /** 39 */"Kanskje du må lage en sextape, så alle får se. Hvem i rommet får én i rumpa i ny og ne?",
     /** 40 */"Vi klandrer ingen, det kan være digg det. Kast boksen til den i rommet med ADHD.",
-    
+
     /** 41 */"Fokus nå, vi skal videre til neste. Hvem vil helst dine grenser teste?",
     /** 42 */"Pass på nå, ikke gå for langt. Kast boksen videre til en som foretrekker at hullet er trangt.",
     /** 43 */"De merker svært lite ved din entré. Gi boksen til den som synes å ligge med yngre er en suksess.",
@@ -57,7 +57,7 @@ const questions = [
 
     /** 51 */"Volumet må ned, barna prøver å sove. Hvem i rommet er alt for grove?",
     /** 52 */"Politisk korrekt er du ikke. Kast nå boksen til den som er oppe å nikke.",
-    /** 53 (legg til animasjon)*/"Det skal hvertfall ikke stå på promillen. Kast nå boksen til den som må ut i ilden",
+    /** 53 (legg til animasjon)*/"Det skal hvertfall ikke stå på promillen. Kast nå boksen til den som må ut i ilden! \n\n (HOTSEAT)",
     /** 54 */"Ble det varmt her eller er det bare meg? Hvem i rommet klarer aldri å si nei?",
     /** 55 */"Dumt du ikke klarer å si ifra. Kast nå boksen til den som liker å bli kalt pappa.",
     /** 56 */"Litt rart er det vel. Gi den videre til den som har livet på stell.",
