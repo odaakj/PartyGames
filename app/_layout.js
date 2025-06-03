@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import { Slot } from 'expo-router';
+import { Slot, Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
-import SplashScreen from './SplashScreen';
+import SplashScreen from './splashScreen';
 
 export default function Layout() {
     const [fontsLoaded] = useFonts({
@@ -26,11 +26,7 @@ export default function Layout() {
     }
 
 
-  return (
-    <View style={styles.container}>
-      <Slot />
-    </View>
-  );
+  return <Stack screenOptions={{ contentStyle: { backgroundColor: '#89CFF0' } }} />;
 }
 
 const styles = StyleSheet.create({

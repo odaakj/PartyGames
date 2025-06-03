@@ -21,13 +21,17 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 isSupported().then((yes) => {
   if (yes) {
     getAnalytics(app);
   }
 });
 
-// Export Firebase services you might use
+// Use persistent auth for React Native
+// export const auth = initializeAuth(app, {
+//   persistence: getReactNativePersistence(AsyncStorage),
+// });
 export const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });

@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'reac
 import { useRouter } from 'expo-router';
 import { signUp, signIn } from '../firebase/authService';
 
-export default function AuthScreen() {
+export default function Index() {
     const router = useRouter();
 
     const [email, setEmail] = useState('');

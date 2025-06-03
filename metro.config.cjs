@@ -6,3 +6,8 @@ const config = getDefaultConfig(__dirname);
 config.resolver.sourceExts.push("cjs", "mjs");
 
 module.exports = config;
+
+//defaultConfig.resolver.unstable_enablePackageExports = false;
+//lagt til
+config.resolver.unstable_enablePackageExports = false;
+module.exports = config;

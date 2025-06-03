@@ -7,7 +7,7 @@ import { logout } from '../firebase/authService';
 import { auth } from '../firebase/firebaseConfig';
 
 
-export default function HomeScreen() {
+export default function Home() {
     const router = useRouter();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
