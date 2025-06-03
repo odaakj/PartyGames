@@ -43,7 +43,7 @@ export default function Home() {
             </View>
             <View style={styles.mainContent}>
                 <ScrollView contentContainerStyle={styles.buttonContainer}>
-                    <GameButton label="Snusboksen" route="/Snusboksa" />
+                    <GameButton label="Snusboksen" route="/snusboksa" />
                 </ScrollView>
             </View>
             <View style= {styles.navContainer} >
